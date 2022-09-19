@@ -1,0 +1,32 @@
+# Settings to be used by various SLM / Prairie interfacing scripts
+
+# SLM
+TransformFile: SLMTransform2D_20180927.mat
+TransformFile3D: 3DTransform_20200619_1621.mat #3DTransform_20200106_1747.mat #3DTransform_20190821_1422.mat # 3DTransform_20190704_1910.mat #3DTransform_20190624_1629 #3DTransform_20181206_1431.mat
+TransformFile3D_9GPs: 3DTransform_20200619_1621.mat #3DTransform_20200106_1747.mat #3DTransform_20190821_1422.mat #3DTransform_20190704_1910.mat #3DTransform_20190624_1629 #3DTransform_20190211_1924.mat #3DTransform_20181213_2031.mat
+SLM_Pixels_X: 2048
+SLM_Pixels_Y: 2048
+SLM_BitDepth: 8
+ZeroOrderBlockSize_PX: 30
+HologramLibraryName: Generate_hologram_opencl #GenerateHologramCUDA_8bit  #was 8
+AutoAdjustWeights: 1 #0  #true
+WeightingFile: 2020-01-06_weighting6Points_DH.mat #2019-08-21_weighting6Points_DH.mat #Bruker3_weightingFile_DH_20181201.mat #20180829_Weights_MaxCoord128.mat
+SteepnessFudgeFactor: 1  # increase steepness of weighting function
+
+# Galvo positions (GPLMaker)
+ScanAmp_X: -2.67457538242462 2.54316049200539              #-4.58904173166754 4.4494617478182 #-2.64673137132123 2.56673137132123  # left,right - save a grid gpl
+ScanAmp_Y: 4.75371802885028  -4.54408522285671                            #4.75066949163591 -4.53767434865853 #2.86321540388228 -2.83321540388228  # top,bottom - save a grid gpl
+FOVsize_OpticalZoom: 1
+FOVsize_PX: 512
+FOVsize_UM_1x: 1923.8 # Thor 10x, is 1214.7 with Nikon 16x ................. #was 1129.5 before GPIO exchange
+
+# Mark points (XMLMaker)
+LaserName: photostim
+LaserPowerScaleFactor: 5
+LaserPowerFile: Bruker3_PowerFile.mat  #mat file containing PV->mW fit
+TriggerLine: PFI1
+VoltageOutputCategoryName: DH
+VoltageOutputExperimentName: 5msPulse_AO3
+
+# RawDataStream
+FlipEvenLines: 1  # was 0
