@@ -1,7 +1,6 @@
 # all-optical-spine-mapping-AOSM-
 
 Dustin Herrmann 2021/2022
-Note: 2022-09-16, this repository is under construction. Dependencies may be incomplete, please contact me if any issues arise. 
 
 This collection of scripts allows reading in 2-photon FOV and widefield retinotopic mapping data to semi-automatically select suitable target locations to be used for all-optical connectivity mapping. Generates SLM phase masks, galvo positions (.gpl) and position list (.xml) files to be read by Bruker's Prairie View software. After stimulating target grid locations, the function "" 
 
